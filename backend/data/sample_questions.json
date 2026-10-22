@@ -1,0 +1,2702 @@
+[
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is 25% of 200?",
+    "explanation": "25% = 1/4, so 200 ÷ 4 = 50",
+    "options": [
+      {
+        "text": "40",
+        "is_correct": false
+      },
+      {
+        "text": "50",
+        "is_correct": true
+      },
+      {
+        "text": "60",
+        "is_correct": false
+      },
+      {
+        "text": "75",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Convert the percentage to a fraction, then apply it to the whole amount.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A train travels 120 km in 2 hours. What is its average speed?",
+    "explanation": "Speed = Distance ÷ Time = 120 km ÷ 2 h = 60 km/h",
+    "options": [
+      {
+        "text": "50 km/h",
+        "is_correct": false
+      },
+      {
+        "text": "60 km/h",
+        "is_correct": true
+      },
+      {
+        "text": "70 km/h",
+        "is_correct": false
+      },
+      {
+        "text": "80 km/h",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the rate formula that compares distance covered with elapsed time.",
+    "submodule": "apt-time-work"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "If 5 pens cost 75 rupees, what is the cost of 8 pens?",
+    "explanation": "Cost per pen = 75 ÷ 5 = 15. Cost of 8 pens = 15 × 8 = 120",
+    "options": [
+      {
+        "text": "105",
+        "is_correct": false
+      },
+      {
+        "text": "120",
+        "is_correct": true
+      },
+      {
+        "text": "135",
+        "is_correct": false
+      },
+      {
+        "text": "150",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Find the cost of one item first, then scale that cost to the requested quantity.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A bar chart shows sales: Jan=50, Feb=60, Mar=70. What is the total for Q1?",
+    "explanation": "50 + 60 + 70 = 180",
+    "options": [
+      {
+        "text": "160",
+        "is_correct": false
+      },
+      {
+        "text": "170",
+        "is_correct": false
+      },
+      {
+        "text": "180",
+        "is_correct": true
+      },
+      {
+        "text": "190",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Add the three monthly values shown for the quarter.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "In a pie chart, a sector of 90° represents what fraction of the whole?",
+    "explanation": "90° ÷ 360° = 1/4",
+    "options": [
+      {
+        "text": "1/2",
+        "is_correct": false
+      },
+      {
+        "text": "1/3",
+        "is_correct": false
+      },
+      {
+        "text": "1/4",
+        "is_correct": true
+      },
+      {
+        "text": "1/5",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Compare the sector angle with the angle of a complete circle.",
+    "submodule": "di-graph-analysis"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A line graph shows temperature rising from 20°C to 35°C over 5 hours. What is the average hourly increase?",
+    "explanation": "Increase = 35 - 20 = 15°C. Average = 15 ÷ 5 = 3°C/hour",
+    "options": [
+      {
+        "text": "2°C/hour",
+        "is_correct": false
+      },
+      {
+        "text": "3°C/hour",
+        "is_correct": true
+      },
+      {
+        "text": "4°C/hour",
+        "is_correct": false
+      },
+      {
+        "text": "5°C/hour",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Find the total temperature change, then divide by the elapsed hours.",
+    "submodule": "di-graph-analysis"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Complete the pattern: 2, 4, 8, 16, ?",
+    "explanation": "Each number doubles: 2×2=4, 4×2=8, 8×2=16, 16×2=32",
+    "options": [
+      {
+        "text": "24",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": false
+      },
+      {
+        "text": "32",
+        "is_correct": true
+      },
+      {
+        "text": "36",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Look for a constant multiplication pattern between consecutive terms.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "If all roses are flowers and some flowers are red, which statement must be true?",
+    "explanation": "Some flowers are red, and all roses are flowers, so some roses could be red but not necessarily. Only 'some flowers are red' is guaranteed.",
+    "options": [
+      {
+        "text": "All roses are red",
+        "is_correct": false
+      },
+      {
+        "text": "Some roses are red",
+        "is_correct": false
+      },
+      {
+        "text": "Some flowers are red",
+        "is_correct": true
+      },
+      {
+        "text": "No roses are red",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Keep only conclusions that follow for every arrangement allowed by the statements.",
+    "submodule": "lr-analytical-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which number is the odd one out: 3, 7, 11, 15, 19?",
+    "explanation": "All are prime numbers except 15 (3 × 5)",
+    "options": [
+      {
+        "text": "3",
+        "is_correct": false
+      },
+      {
+        "text": "7",
+        "is_correct": false
+      },
+      {
+        "text": "11",
+        "is_correct": false
+      },
+      {
+        "text": "15",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "Test each number for divisibility by small primes rather than following the spacing.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the capital city of Australia?",
+    "explanation": "Canberra is the capital city of Australia, not Sydney or Melbourne",
+    "options": [
+      {
+        "text": "Sydney",
+        "is_correct": false
+      },
+      {
+        "text": "Melbourne",
+        "is_correct": false
+      },
+      {
+        "text": "Canberra",
+        "is_correct": true
+      },
+      {
+        "text": "Perth",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Distinguish the official seat of government from the country?s best-known cities.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which planet is known as the Red Planet?",
+    "explanation": "Mars appears red due to iron oxide on its surface",
+    "options": [
+      {
+        "text": "Venus",
+        "is_correct": false
+      },
+      {
+        "text": "Mars",
+        "is_correct": true
+      },
+      {
+        "text": "Jupiter",
+        "is_correct": false
+      },
+      {
+        "text": "Saturn",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Think of the planet whose surface contains iron oxide.",
+    "submodule": "gk-science-tech"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "How many continents are there on Earth?",
+    "explanation": "There are 7 continents: Africa, Antarctica, Asia, Europe, North America, Oceania, South America",
+    "options": [
+      {
+        "text": "5",
+        "is_correct": false
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "7",
+        "is_correct": true
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the common model that divides Earth?s land into large named regions.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What does the acronym 'HTML' stand for?",
+    "explanation": "HyperText Markup Language",
+    "options": [
+      {
+        "text": "HyperText Machine Language",
+        "is_correct": false
+      },
+      {
+        "text": "HyperText Markup Language",
+        "is_correct": true
+      },
+      {
+        "text": "HighTech Markup Language",
+        "is_correct": false
+      },
+      {
+        "text": "HyperText Marking Language",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The expansion describes the markup system used to structure web pages.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "In Python, which keyword is used to define a function?",
+    "explanation": "The 'def' keyword defines a function in Python",
+    "options": [
+      {
+        "text": "function",
+        "is_correct": false
+      },
+      {
+        "text": "def",
+        "is_correct": true
+      },
+      {
+        "text": "func",
+        "is_correct": false
+      },
+      {
+        "text": "define",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Recall the short Python keyword placed before a function name and its parameters.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the output of: print(2 ** 3)?",
+    "explanation": "** is the exponentiation operator. 2 ** 3 = 2³ = 8",
+    "options": [
+      {
+        "text": "5",
+        "is_correct": false
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": true
+      },
+      {
+        "text": "9",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The double asterisk means repeated multiplication of the same base.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What does CPU stand for?",
+    "explanation": "Central Processing Unit",
+    "options": [
+      {
+        "text": "Central Program Unit",
+        "is_correct": false
+      },
+      {
+        "text": "Central Processing Unit",
+        "is_correct": true
+      },
+      {
+        "text": "Computer Processing Unit",
+        "is_correct": false
+      },
+      {
+        "text": "Core Processing Unit",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Think of the computer component that executes instructions and coordinates operations.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which of the following is a volatile memory?",
+    "explanation": "RAM (Random Access Memory) loses data when power is off. ROM and hard disks are non-volatile.",
+    "options": [
+      {
+        "text": "ROM",
+        "is_correct": false
+      },
+      {
+        "text": "Hard Disk",
+        "is_correct": false
+      },
+      {
+        "text": "RAM",
+        "is_correct": true
+      },
+      {
+        "text": "SSD",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Volatile storage loses its contents when electrical power is removed.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the binary representation of decimal 10?",
+    "explanation": "10 = 8 + 2 = 2³ + 2¹ = 1010₂",
+    "options": [
+      {
+        "text": "1001",
+        "is_correct": false
+      },
+      {
+        "text": "1010",
+        "is_correct": true
+      },
+      {
+        "text": "1100",
+        "is_correct": false
+      },
+      {
+        "text": "1111",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Express the quantity as a sum of powers of two, then record their place values.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the SI unit of force?",
+    "explanation": "Force = mass × acceleration. Newton (N) = kg·m/s²",
+    "options": [
+      {
+        "text": "Joule",
+        "is_correct": false
+      },
+      {
+        "text": "Newton",
+        "is_correct": true
+      },
+      {
+        "text": "Watt",
+        "is_correct": false
+      },
+      {
+        "text": "Pascal",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Multiply mass by acceleration, then choose the matching SI derived unit.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which law states that energy cannot be created or destroyed?",
+    "explanation": "First Law of Thermodynamics: Energy conservation",
+    "options": [
+      {
+        "text": "Newton's First Law",
+        "is_correct": false
+      },
+      {
+        "text": "Ohm's Law",
+        "is_correct": false
+      },
+      {
+        "text": "Law of Conservation of Energy",
+        "is_correct": true
+      },
+      {
+        "text": "Hooke's Law",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "This is the thermodynamics principle that accounts for energy conservation.",
+    "submodule": "eng-mechanical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the unit of electrical resistance?",
+    "explanation": "Ohm (Ω) is the SI unit of electrical resistance",
+    "options": [
+      {
+        "text": "Volt",
+        "is_correct": false
+      },
+      {
+        "text": "Ampere",
+        "is_correct": false
+      },
+      {
+        "text": "Ohm",
+        "is_correct": true
+      },
+      {
+        "text": "Watt",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the ratio of voltage to current to identify the resistance unit.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "How many chambers does the human heart have?",
+    "explanation": "The human heart has 4 chambers: 2 atria and 2 ventricles",
+    "options": [
+      {
+        "text": "2",
+        "is_correct": false
+      },
+      {
+        "text": "3",
+        "is_correct": false
+      },
+      {
+        "text": "4",
+        "is_correct": true
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The organ has upper receiving chambers and lower pumping chambers.",
+    "submodule": "med-anatomy"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which blood type is known as the universal donor?",
+    "explanation": "O negative blood can be donated to any blood type in emergencies",
+    "options": [
+      {
+        "text": "A+",
+        "is_correct": false
+      },
+      {
+        "text": "B-",
+        "is_correct": false
+      },
+      {
+        "text": "AB+",
+        "is_correct": false
+      },
+      {
+        "text": "O-",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "Consider red-cell compatibility, including both ABO antigens and the Rh factor.",
+    "submodule": "med-basic-science"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the normal human body temperature in Celsius?",
+    "explanation": "Normal body temperature is approximately 37°C (98.6°F)",
+    "options": [
+      {
+        "text": "35°C",
+        "is_correct": false
+      },
+      {
+        "text": "37°C",
+        "is_correct": true
+      },
+      {
+        "text": "39°C",
+        "is_correct": false
+      },
+      {
+        "text": "41°C",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the commonly cited average reference value; normal readings can vary slightly.",
+    "submodule": "med-physiology"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A rectangle has length 12 cm and width 8 cm. What is its perimeter?",
+    "explanation": "Perimeter = 2 × (length + width) = 2 × (12 + 8) = 2 × 20 = 40 cm",
+    "options": [
+      {
+        "text": "32 cm",
+        "is_correct": false
+      },
+      {
+        "text": "40 cm",
+        "is_correct": true
+      },
+      {
+        "text": "48 cm",
+        "is_correct": false
+      },
+      {
+        "text": "56 cm",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Add the lengths of adjacent sides and account for the opposite sides as well.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A table shows: Apples=15, Bananas=20, Oranges=25. What percentage of total fruit are Bananas?",
+    "explanation": "Total = 15+20+25 = 60. Bananas % = (20/60) × 100 = 33.33%",
+    "options": [
+      {
+        "text": "25%",
+        "is_correct": false
+      },
+      {
+        "text": "33.33%",
+        "is_correct": true
+      },
+      {
+        "text": "40%",
+        "is_correct": false
+      },
+      {
+        "text": "50%",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Find the total first, then compare the banana count with that total.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "If A > B and B > C, which statement must be true?",
+    "explanation": "By transitivity: if A > B and B > C, then A > C",
+    "options": [
+      {
+        "text": "A > C",
+        "is_correct": true
+      },
+      {
+        "text": "A < C",
+        "is_correct": false
+      },
+      {
+        "text": "A = C",
+        "is_correct": false
+      },
+      {
+        "text": "Cannot be determined",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Apply transitivity to the two ordered comparisons.",
+    "submodule": "lr-analytical-reasoning"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which ocean is the largest by surface area?",
+    "explanation": "The Pacific Ocean covers about 165 million km², larger than all land area combined",
+    "options": [
+      {
+        "text": "Atlantic",
+        "is_correct": false
+      },
+      {
+        "text": "Indian",
+        "is_correct": false
+      },
+      {
+        "text": "Pacific",
+        "is_correct": true
+      },
+      {
+        "text": "Arctic",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Compare the surface areas of the five major ocean basins.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the output of: print(len('hello'))?",
+    "explanation": "The len() function returns the number of characters in a string. 'hello' has 5 characters.",
+    "options": [
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "5",
+        "is_correct": true
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "Error",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Count the characters in the string; each visible letter contributes one.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What does the acronym 'RAM' stand for?",
+    "explanation": "Random Access Memory - volatile memory that allows data to be read and written in any order",
+    "options": [
+      {
+        "text": "Read Access Memory",
+        "is_correct": false
+      },
+      {
+        "text": "Random Access Memory",
+        "is_correct": true
+      },
+      {
+        "text": "Rapid Access Memory",
+        "is_correct": false
+      },
+      {
+        "text": "Run Access Memory",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Expand the acronym for temporary working memory that supports direct access.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the SI unit of power?",
+    "explanation": "Power = Work / Time. Watt (W) = Joule/second = kg·m²/s³",
+    "options": [
+      {
+        "text": "Joule",
+        "is_correct": false
+      },
+      {
+        "text": "Newton",
+        "is_correct": false
+      },
+      {
+        "text": "Watt",
+        "is_correct": true
+      },
+      {
+        "text": "Volt",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Power measures how quickly work or energy is transferred.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which organ is primarily responsible for filtering blood and producing urine?",
+    "explanation": "The kidneys filter waste products from blood and produce urine for excretion",
+    "options": [
+      {
+        "text": "Liver",
+        "is_correct": false
+      },
+      {
+        "text": "Kidney",
+        "is_correct": true
+      },
+      {
+        "text": "Heart",
+        "is_correct": false
+      },
+      {
+        "text": "Lung",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Look to the paired organs of the urinary system that clean blood and make urine.",
+    "submodule": "med-anatomy"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the average of 10, 20, 30, 40, and 50?",
+    "explanation": "Sum = 10 + 20 + 30 + 40 + 50 = 150. Average = 150 / 5 = 30",
+    "options": [
+      {
+        "text": "20",
+        "is_correct": false
+      },
+      {
+        "text": "25",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": true
+      },
+      {
+        "text": "35",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "For an arithmetic mean, add every value and divide by how many values there are.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A table shows students in four clubs: Music=12, Art=18, Drama=15, Sports=25. What is the difference between the largest and smallest club sizes?",
+    "explanation": "Largest is Sports (25) and smallest is Music (12). Difference = 25 - 12 = 13",
+    "options": [
+      {
+        "text": "13",
+        "is_correct": true
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "15",
+        "is_correct": false
+      },
+      {
+        "text": "18",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Subtract the smallest club count from the largest.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Complete the letter series: B, D, F, H, ?",
+    "explanation": "Each letter in the series skips one letter forward in the alphabet: B (+2) -> D (+2) -> F (+2) -> H (+2) -> J",
+    "options": [
+      {
+        "text": "I",
+        "is_correct": false
+      },
+      {
+        "text": "K",
+        "is_correct": false
+      },
+      {
+        "text": "J",
+        "is_correct": true
+      },
+      {
+        "text": "L",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Track the alphabet positions and look for a fixed step between each pair.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the tallest mountain above sea level on Earth?",
+    "explanation": "Mount Everest is the highest mountain above sea level, reaching an elevation of 8,848.86 meters",
+    "options": [
+      {
+        "text": "K2",
+        "is_correct": false
+      },
+      {
+        "text": "Mount Everest",
+        "is_correct": true
+      },
+      {
+        "text": "Mount Kilimanjaro",
+        "is_correct": false
+      },
+      {
+        "text": "Mount Fuji",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The answer is the mountain with the greatest elevation above sea level.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "In Python, which symbol is used to start a single-line comment?",
+    "explanation": "The hash character (#) is used to begin single-line comments in Python",
+    "options": [
+      {
+        "text": "//",
+        "is_correct": false
+      },
+      {
+        "text": "/*",
+        "is_correct": false
+      },
+      {
+        "text": "--",
+        "is_correct": false
+      },
+      {
+        "text": "#",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "Python marks a one-line comment with a single punctuation character.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "How many bits are in one byte?",
+    "explanation": "One byte is composed of exactly 8 bits",
+    "options": [
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": true
+      },
+      {
+        "text": "16",
+        "is_correct": false
+      },
+      {
+        "text": "32",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "A standard byte contains a fixed group of binary digits.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the SI unit of electric current?",
+    "explanation": "The Ampere (A) is the base SI unit of electric current",
+    "options": [
+      {
+        "text": "Volt",
+        "is_correct": false
+      },
+      {
+        "text": "Ohm",
+        "is_correct": false
+      },
+      {
+        "text": "Ampere",
+        "is_correct": true
+      },
+      {
+        "text": "Watt",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Recall the SI base unit named after the scientist associated with electric current.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which blood cells are primarily responsible for transporting oxygen throughout the body?",
+    "explanation": "Red blood cells (erythrocytes) contain hemoglobin, which binds and transports oxygen",
+    "options": [
+      {
+        "text": "Red blood cells",
+        "is_correct": true
+      },
+      {
+        "text": "White blood cells",
+        "is_correct": false
+      },
+      {
+        "text": "Platelets",
+        "is_correct": false
+      },
+      {
+        "text": "Plasma cells",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "These oxygen-carrying cells contain hemoglobin and circulate through blood vessels.",
+    "submodule": "med-physiology"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A person deposits $500 in a savings account with a 5% simple annual interest rate. How much interest is earned in 1 year?",
+    "explanation": "Simple Interest = (Principal * Rate * Time) / 100 = (500 * 5 * 1) / 100 = $25",
+    "options": [
+      {
+        "text": "$15",
+        "is_correct": false
+      },
+      {
+        "text": "$20",
+        "is_correct": false
+      },
+      {
+        "text": "$25",
+        "is_correct": true
+      },
+      {
+        "text": "$30",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use principal multiplied by annual rate and time, divided by one hundred.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "The ratio of boys to girls in a class is 3:2. If there are 18 boys, how many girls are in the class?",
+    "explanation": "If 3 parts correspond to 18 boys, each part is 18 / 3 = 6. Thus, 2 parts for girls is 2 * 6 = 12 girls",
+    "options": [
+      {
+        "text": "12",
+        "is_correct": true
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "14",
+        "is_correct": false
+      },
+      {
+        "text": "16",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "If three ratio parts equal the boys? count, find one part before scaling to girls.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "apt",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "A retailer buys a watch for $120 and sells it for $150. What is the profit percentage?",
+    "explanation": "Profit = $150 - $120 = $30. Profit Percentage = (Profit / Cost Price) * 100 = (30 / 120) * 100 = 25%",
+    "options": [
+      {
+        "text": "20%",
+        "is_correct": false
+      },
+      {
+        "text": "30%",
+        "is_correct": false
+      },
+      {
+        "text": "25%",
+        "is_correct": true
+      },
+      {
+        "text": "15%",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Profit percentage uses profit divided by the original cost, then multiplied by 100.",
+    "submodule": "apt-quantitative"
+  },
+  {
+    "module": "apt",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Worker A can complete a task alone in 6 hours, and Worker B can complete the same task alone in 3 hours. How long will they take working together?",
+    "explanation": "Combined rate = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2 of task per hour. Time = 1 / (1/2) = 2 hours",
+    "options": [
+      {
+        "text": "4.5 hours",
+        "is_correct": false
+      },
+      {
+        "text": "2.5 hours",
+        "is_correct": false
+      },
+      {
+        "text": "2 hours",
+        "is_correct": true
+      },
+      {
+        "text": "1.5 hours",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Add the workers? fractions of a task completed per hour, then take the reciprocal.",
+    "submodule": "apt-time-work"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A bar chart shows weekly attendance at a library: Mon=40, Tue=60, Wed=50, Thu=70, Fri=80. How many more people visited on Friday than on Monday?",
+    "explanation": "Friday attendance (80) minus Monday attendance (40) equals 80 - 40 = 40 people",
+    "options": [
+      {
+        "text": "30",
+        "is_correct": false
+      },
+      {
+        "text": "40",
+        "is_correct": true
+      },
+      {
+        "text": "50",
+        "is_correct": false
+      },
+      {
+        "text": "20",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Subtract the Monday value from the Friday value.",
+    "submodule": "di-graph-analysis"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A table records the number of vehicles in a parking lot: Sedans=30, SUVs=20, Trucks=10. What is the ratio of Sedans to Trucks in simplest form?",
+    "explanation": "Ratio of Sedans to Trucks = 30:10. Dividing both terms by 10 gives 3:1",
+    "options": [
+      {
+        "text": "2:1",
+        "is_correct": false
+      },
+      {
+        "text": "3:2",
+        "is_correct": false
+      },
+      {
+        "text": "3:1",
+        "is_correct": true
+      },
+      {
+        "text": "1:3",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Write the two counts as a ratio, then divide both by their greatest common factor.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "di",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "In a company budget pie chart, Marketing accounts for 20% of total expenditure. What angle does this sector represent on the pie chart?",
+    "explanation": "A complete circle is 360 degrees. 20% of 360 degrees = 0.20 * 360 = 72 degrees",
+    "options": [
+      {
+        "text": "60 degrees",
+        "is_correct": false
+      },
+      {
+        "text": "72 degrees",
+        "is_correct": true
+      },
+      {
+        "text": "90 degrees",
+        "is_correct": false
+      },
+      {
+        "text": "45 degrees",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Apply the stated percentage to the full 360-degree circle.",
+    "submodule": "di-graph-analysis"
+  },
+  {
+    "module": "di",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "A company revenue was $40,000 in Q1 and $50,000 in Q2. What was the percentage increase in revenue from Q1 to Q2?",
+    "explanation": "Increase = $50,000 - $40,000 = $10,000. Percentage increase = (10,000 / 40,000) * 100 = 25%",
+    "options": [
+      {
+        "text": "25%",
+        "is_correct": true
+      },
+      {
+        "text": "20%",
+        "is_correct": false
+      },
+      {
+        "text": "10%",
+        "is_correct": false
+      },
+      {
+        "text": "30%",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Measure the change from the first quarter, then divide by that starting value.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Book is to Reading as Fork is to:",
+    "explanation": "A book is an instrument used for reading; similarly, a fork is an instrument used for eating",
+    "options": [
+      {
+        "text": "Writing",
+        "is_correct": false
+      },
+      {
+        "text": "Eating",
+        "is_correct": true
+      },
+      {
+        "text": "Cooking",
+        "is_correct": false
+      },
+      {
+        "text": "Cutting",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Match each object with the activity it is commonly used to perform.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A person walks 10 meters North, turns right, and walks 5 meters. In which direction is the person currently facing?",
+    "explanation": "Facing North, a right turn (90 degrees clockwise) points directly towards East",
+    "options": [
+      {
+        "text": "East",
+        "is_correct": true
+      },
+      {
+        "text": "West",
+        "is_correct": false
+      },
+      {
+        "text": "South",
+        "is_correct": false
+      },
+      {
+        "text": "North",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "A right turn is a quarter-turn clockwise from the direction the person faces.",
+    "submodule": "lr-analytical-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Find the next number in the series: 3, 6, 11, 18, 27, ?",
+    "explanation": "The differences between consecutive terms increase by 2: +3, +5, +7, +9. The next difference is +11, giving 27 + 11 = 38",
+    "options": [
+      {
+        "text": "36",
+        "is_correct": false
+      },
+      {
+        "text": "38",
+        "is_correct": true
+      },
+      {
+        "text": "40",
+        "is_correct": false
+      },
+      {
+        "text": "35",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Write the successive differences; they increase by a regular amount.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Pointing to a photograph, John says: 'She is the only daughter of my mother.' Who is the person in the photograph to John?",
+    "explanation": "The only daughter of John's mother is John's sister",
+    "options": [
+      {
+        "text": "His mother",
+        "is_correct": false
+      },
+      {
+        "text": "His daughter",
+        "is_correct": false
+      },
+      {
+        "text": "His sister",
+        "is_correct": true
+      },
+      {
+        "text": "His aunt",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Interpret ?only daughter of my mother? as a relationship in John?s immediate family.",
+    "submodule": "lr-analytical-reasoning"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which river is widely considered the longest in the world?",
+    "explanation": "The Nile River in northeastern Africa is traditionally recognized as the longest river in the world, spanning approximately 6,650 km",
+    "options": [
+      {
+        "text": "Amazon River",
+        "is_correct": false
+      },
+      {
+        "text": "Nile River",
+        "is_correct": true
+      },
+      {
+        "text": "Yangtze River",
+        "is_correct": false
+      },
+      {
+        "text": "Mississippi River",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the traditionally cited comparison of river lengths in world geography.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which chemical element has the symbol 'O' on the periodic table?",
+    "explanation": "The chemical symbol 'O' stands for Oxygen, which has atomic number 8",
+    "options": [
+      {
+        "text": "Osmium",
+        "is_correct": false
+      },
+      {
+        "text": "Oxygen",
+        "is_correct": true
+      },
+      {
+        "text": "Gold",
+        "is_correct": false
+      },
+      {
+        "text": "Oganesson",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Identify the element essential for respiration whose symbol is a single letter.",
+    "submodule": "gk-science-tech"
+  },
+  {
+    "module": "gk",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Who is credited with inventing the World Wide Web in 1989?",
+    "explanation": "Sir Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN",
+    "options": [
+      {
+        "text": "Alan Turing",
+        "is_correct": false
+      },
+      {
+        "text": "Tim Berners-Lee",
+        "is_correct": true
+      },
+      {
+        "text": "Bill Gates",
+        "is_correct": false
+      },
+      {
+        "text": "Steve Jobs",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Recall the computer scientist working at CERN who proposed the Web in 1989.",
+    "submodule": "gk-science-tech"
+  },
+  {
+    "module": "gk",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which country has the largest land area in the world?",
+    "explanation": "Russia is the largest country by area, covering over 17 million square kilometers across Eastern Europe and Northern Asia",
+    "options": [
+      {
+        "text": "Canada",
+        "is_correct": false
+      },
+      {
+        "text": "United States",
+        "is_correct": false
+      },
+      {
+        "text": "China",
+        "is_correct": false
+      },
+      {
+        "text": "Russia",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "Compare countries by total land area rather than population or economy.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "In Python, what is the value of my_list[0] if my_list = [10, 20, 30]?",
+    "explanation": "Python uses 0-based indexing, so the first element at index 0 is 10",
+    "options": [
+      {
+        "text": "10",
+        "is_correct": true
+      },
+      {
+        "text": "20",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": false
+      },
+      {
+        "text": "IndexError",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Python sequences start counting positions from zero.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the result of the Python expression: True and False?",
+    "explanation": "The logical 'and' operator returns True only if both operands are True. Since one is False, the result is False",
+    "options": [
+      {
+        "text": "True",
+        "is_correct": false
+      },
+      {
+        "text": "False",
+        "is_correct": true
+      },
+      {
+        "text": "None",
+        "is_correct": false
+      },
+      {
+        "text": "Error",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The logical AND is true only when both inputs are true.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "prog",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "What is the output of: sum(range(1, 4)) in Python?",
+    "explanation": "range(1, 4) produces the integers 1, 2, and 3 (the upper bound 4 is exclusive). Their sum is 1 + 2 + 3 = 6",
+    "options": [
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "6",
+        "is_correct": true
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "3",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The range stop value is excluded; add only the values it produces.",
+    "submodule": "prog-control-loops"
+  },
+  {
+    "module": "prog",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "What is the output of: print('PYTHON'[-1]) in Python?",
+    "explanation": "Negative indexing in Python accesses elements from the end of the sequence. Index -1 refers to the last character, which is 'N'",
+    "options": [
+      {
+        "text": "'P'",
+        "is_correct": false
+      },
+      {
+        "text": "'O'",
+        "is_correct": false
+      },
+      {
+        "text": "'N'",
+        "is_correct": true
+      },
+      {
+        "text": "IndexError",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "A negative index of minus one refers to the final character.",
+    "submodule": "prog-arrays-ds"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which of the following is an open-source operating system kernel?",
+    "explanation": "Linux is a free and open-source operating system kernel originally created by Linus Torvalds",
+    "options": [
+      {
+        "text": "Windows",
+        "is_correct": false
+      },
+      {
+        "text": "Linux",
+        "is_correct": true
+      },
+      {
+        "text": "macOS",
+        "is_correct": false
+      },
+      {
+        "text": "MS-DOS",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Think of the open-source kernel first released by Linus Torvalds.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "How many megabytes (MB) are in one gigabyte (GB) in standard binary computing (base 2)?",
+    "explanation": "In binary computing (powers of 2), 1 GB = 2^10 MB = 1024 MB",
+    "options": [
+      {
+        "text": "100",
+        "is_correct": false
+      },
+      {
+        "text": "512",
+        "is_correct": false
+      },
+      {
+        "text": "1024",
+        "is_correct": true
+      },
+      {
+        "text": "2048",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "In base two, one giga-unit contains two to the tenth of the smaller unit.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "cs",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which network protocol is primarily used for securely transferring encrypted web pages?",
+    "explanation": "HTTPS (Hypertext Transfer Protocol Secure) encrypts communication using TLS/SSL to protect web traffic",
+    "options": [
+      {
+        "text": "HTTP",
+        "is_correct": false
+      },
+      {
+        "text": "FTP",
+        "is_correct": false
+      },
+      {
+        "text": "HTTPS",
+        "is_correct": true
+      },
+      {
+        "text": "SMTP",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Choose the web protocol that adds TLS encryption to ordinary page transfer.",
+    "submodule": "cs-networks"
+  },
+  {
+    "module": "cs",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which data structure operates on a First-In, First-Out (FIFO) principle?",
+    "explanation": "A Queue processes elements in First-In, First-Out (FIFO) order, whereas a Stack uses Last-In, First-Out (LIFO)",
+    "options": [
+      {
+        "text": "Stack",
+        "is_correct": false
+      },
+      {
+        "text": "Queue",
+        "is_correct": true
+      },
+      {
+        "text": "Tree",
+        "is_correct": false
+      },
+      {
+        "text": "Graph",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Compare the structure that preserves arrival order with one that removes the newest item first.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "According to Ohm's Law, what is the mathematical relationship between Voltage (V), Current (I), and Resistance (R)?",
+    "explanation": "Ohm's Law states that Voltage equals Current multiplied by Resistance (V = I * R)",
+    "options": [
+      {
+        "text": "V = I * R",
+        "is_correct": true
+      },
+      {
+        "text": "V = I / R",
+        "is_correct": false
+      },
+      {
+        "text": "V = R / I",
+        "is_correct": false
+      },
+      {
+        "text": "V = I + R",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the standard electrical relationship among potential difference, current, and resistance.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the SI unit of frequency, representing one cycle per second?",
+    "explanation": "The Hertz (Hz) is the SI unit of frequency, defined as one periodic cycle per second",
+    "options": [
+      {
+        "text": "Joule",
+        "is_correct": false
+      },
+      {
+        "text": "Pascal",
+        "is_correct": false
+      },
+      {
+        "text": "Hertz",
+        "is_correct": true
+      },
+      {
+        "text": "Tesla",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Frequency counts cycles per second; its SI unit is named after a physicist.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "What is the SI unit of pressure, equivalent to one Newton per square meter?",
+    "explanation": "The Pascal (Pa) is the SI unit of pressure, defined as 1 Newton per square meter (1 N/m^2)",
+    "options": [
+      {
+        "text": "Pascal",
+        "is_correct": true
+      },
+      {
+        "text": "Bar",
+        "is_correct": false
+      },
+      {
+        "text": "Joule",
+        "is_correct": false
+      },
+      {
+        "text": "Watt",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Pressure is force per area; the named SI unit is equivalent to one newton per square meter.",
+    "submodule": "eng-mechanical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which mode of heat transfer occurs through electromagnetic waves without requiring a physical medium?",
+    "explanation": "Thermal radiation transfers energy via electromagnetic waves and can travel through a vacuum, unlike conduction and convection",
+    "options": [
+      {
+        "text": "Conduction",
+        "is_correct": false
+      },
+      {
+        "text": "Convection",
+        "is_correct": false
+      },
+      {
+        "text": "Radiation",
+        "is_correct": true
+      },
+      {
+        "text": "Advection",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "This transfer mode carries energy as electromagnetic waves and works through a vacuum.",
+    "submodule": "eng-mechanical"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Approximately how many bones make up the adult human skeleton?",
+    "explanation": "An adult human body typically has 206 bones, following the fusion of several childhood bones",
+    "options": [
+      {
+        "text": "156",
+        "is_correct": false
+      },
+      {
+        "text": "206",
+        "is_correct": true
+      },
+      {
+        "text": "256",
+        "is_correct": false
+      },
+      {
+        "text": "306",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Several bones fuse during growth, so the adult count is lower than in infancy.",
+    "submodule": "med-anatomy"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "In the human respiratory system, in which tiny air sacs does gas exchange primarily take place?",
+    "explanation": "Alveoli are microscopic air sacs in the lungs where oxygen enters the bloodstream and carbon dioxide is expelled",
+    "options": [
+      {
+        "text": "Bronchi",
+        "is_correct": false
+      },
+      {
+        "text": "Alveoli",
+        "is_correct": true
+      },
+      {
+        "text": "Trachea",
+        "is_correct": false
+      },
+      {
+        "text": "Larynx",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Gas exchange happens in microscopic sacs at the ends of the smallest airways.",
+    "submodule": "med-physiology"
+  },
+  {
+    "module": "med",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which endocrine organ produces the hormone insulin to help regulate blood sugar levels?",
+    "explanation": "The pancreas produces insulin, a hormone that facilitates the uptake of glucose into cells",
+    "options": [
+      {
+        "text": "Liver",
+        "is_correct": false
+      },
+      {
+        "text": "Pancreas",
+        "is_correct": true
+      },
+      {
+        "text": "Gallbladder",
+        "is_correct": false
+      },
+      {
+        "text": "Spleen",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Look for the abdominal endocrine organ that releases a hormone regulating blood sugar.",
+    "submodule": "med-basic-science"
+  },
+  {
+    "module": "med",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which large blood vessel carries oxygenated blood directly away from the left ventricle of the heart to the rest of the body?",
+    "explanation": "The aorta is the largest artery in the human body, receiving oxygen-rich blood from the left ventricle and distributing it systemically",
+    "options": [
+      {
+        "text": "Vena cava",
+        "is_correct": false
+      },
+      {
+        "text": "Pulmonary artery",
+        "is_correct": false
+      },
+      {
+        "text": "Aorta",
+        "is_correct": true
+      },
+      {
+        "text": "Jugular vein",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Follow oxygen-rich blood leaving the heart?s left pumping chamber into systemic circulation.",
+    "submodule": "med-anatomy"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A triangle has a base of 10 cm and a height of 6 cm. What is its area?",
+    "explanation": "Area of a triangle = (base * height) / 2 = (10 * 6) / 2 = 30 sq cm",
+    "options": [
+      {
+        "text": "30 sq cm",
+        "is_correct": true
+      },
+      {
+        "text": "60 sq cm",
+        "is_correct": false
+      },
+      {
+        "text": "16 sq cm",
+        "is_correct": false
+      },
+      {
+        "text": "25 sq cm",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use half the product of the triangle?s base and perpendicular height.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A jacket originally priced at $80 is on sale with a 20% discount. What is the sale price?",
+    "explanation": "Discount amount = 20% of $80 = 0.20 * 80 = $16. Sale price = $80 - $16 = $64",
+    "options": [
+      {
+        "text": "$60",
+        "is_correct": false
+      },
+      {
+        "text": "$64",
+        "is_correct": true
+      },
+      {
+        "text": "$68",
+        "is_correct": false
+      },
+      {
+        "text": "$72",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Calculate the discount amount, then subtract it from the original price.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "apt",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Two cars start from the same point and travel in opposite directions at speeds of 40 km/h and 60 km/h. How far apart will they be after 2 hours?",
+    "explanation": "Relative speed in opposite directions = 40 + 60 = 100 km/h. Distance after 2 hours = 100 * 2 = 200 km",
+    "options": [
+      {
+        "text": "160 km",
+        "is_correct": false
+      },
+      {
+        "text": "180 km",
+        "is_correct": false
+      },
+      {
+        "text": "200 km",
+        "is_correct": true
+      },
+      {
+        "text": "240 km",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "When motion is in opposite directions, add the speeds to get separation rate.",
+    "submodule": "apt-time-work"
+  },
+  {
+    "module": "apt",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "A father is currently 4 times as old as his son. If the son is currently 10 years old, how old will the father be in 5 years?",
+    "explanation": "The father's current age is 4 * 10 = 40 years. In 5 years, he will be 40 + 5 = 45 years old",
+    "options": [
+      {
+        "text": "40 years",
+        "is_correct": false
+      },
+      {
+        "text": "45 years",
+        "is_correct": true
+      },
+      {
+        "text": "50 years",
+        "is_correct": false
+      },
+      {
+        "text": "55 years",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Find the father?s present age from the stated multiple, then add five years.",
+    "submodule": "apt-arithmetic"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A table shows daily egg production of a small farm: Mon=110, Tue=120, Wed=130. What is the average daily production across these three days?",
+    "explanation": "Total production = 110 + 120 + 130 = 360. Average = 360 / 3 = 120 eggs",
+    "options": [
+      {
+        "text": "115",
+        "is_correct": false
+      },
+      {
+        "text": "125",
+        "is_correct": false
+      },
+      {
+        "text": "120",
+        "is_correct": true
+      },
+      {
+        "text": "130",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Add the three daily counts and divide by the number of days.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "di",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A chart records score totals for four exam sections: Math=45, Science=40, History=35, English=30. What is the total combined score for Math and English?",
+    "explanation": "Combined score = Math (45) + English (30) = 75 points",
+    "options": [
+      {
+        "text": "70",
+        "is_correct": false
+      },
+      {
+        "text": "80",
+        "is_correct": false
+      },
+      {
+        "text": "85",
+        "is_correct": false
+      },
+      {
+        "text": "75",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "Use only the two named sections and add their scores.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "di",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "A sales table shows units sold in two months: Product X: May=50, June=80; Product Y: May=60, June=70. How many more units of Product X were sold in June compared to May?",
+    "explanation": "Product X sales increased from 50 in May to 80 in June. The increase is 80 - 50 = 30 units",
+    "options": [
+      {
+        "text": "20",
+        "is_correct": false
+      },
+      {
+        "text": "25",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": true
+      },
+      {
+        "text": "35",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Compare Product X?s June count with its May count by subtraction.",
+    "submodule": "di-tables-charts"
+  },
+  {
+    "module": "di",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "A town population is 50,000. In a demographic pie chart, children represent a sector of 72 degrees. How many children live in the town?",
+    "explanation": "Fraction of circle = 72 / 360 = 1/5 (20%). Number of children = 50,000 / 5 = 10,000",
+    "options": [
+      {
+        "text": "8,000",
+        "is_correct": false
+      },
+      {
+        "text": "10,000",
+        "is_correct": true
+      },
+      {
+        "text": "12,000",
+        "is_correct": false
+      },
+      {
+        "text": "15,000",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Convert the sector angle to a fraction of a full circle, then apply it to the population.",
+    "submodule": "di-graph-analysis"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "If 'CAT' is coded as 'DBU' by shifting each letter forward by 1, how is 'DOG' coded using the same rule?",
+    "explanation": "Each letter shifts forward by 1: D -> E, O -> P, G -> H. So 'DOG' becomes 'EPH'",
+    "options": [
+      {
+        "text": "EPH",
+        "is_correct": true
+      },
+      {
+        "text": "EOH",
+        "is_correct": false
+      },
+      {
+        "text": "EQH",
+        "is_correct": false
+      },
+      {
+        "text": "FPH",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Move each letter one position forward in the alphabet.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which of the following geometric shapes does NOT have exactly 4 sides?",
+    "explanation": "A pentagon has 5 sides, whereas rectangles, trapezoids, and rhombuses are four-sided quadrilaterals",
+    "options": [
+      {
+        "text": "Rectangle",
+        "is_correct": false
+      },
+      {
+        "text": "Trapezoid",
+        "is_correct": false
+      },
+      {
+        "text": "Rhombus",
+        "is_correct": false
+      },
+      {
+        "text": "Pentagon",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "A quadrilateral has four sides; check which option has a different side count.",
+    "submodule": "lr-nonverbal-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Four friends (P, Q, R, S) are sitting in a straight row facing North. P is to the immediate left of Q, and R is to the immediate right of Q. If S is at the far right end, who is sitting second from the left?",
+    "explanation": "The order from left to right is P, Q, R, S. Therefore, Q is sitting second from the left",
+    "options": [
+      {
+        "text": "P",
+        "is_correct": false
+      },
+      {
+        "text": "Q",
+        "is_correct": true
+      },
+      {
+        "text": "R",
+        "is_correct": false
+      },
+      {
+        "text": "S",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Place the immediate-left and immediate-right relationships first, then fit the remaining person.",
+    "submodule": "lr-analytical-reasoning"
+  },
+  {
+    "module": "lr",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "What is the next number in the sequence: 50, 45, 39, 32, ?",
+    "explanation": "The decrements increase by 1: 50 - 5 = 45; 45 - 6 = 39; 39 - 7 = 32; 32 - 8 = 24",
+    "options": [
+      {
+        "text": "23",
+        "is_correct": false
+      },
+      {
+        "text": "24",
+        "is_correct": true
+      },
+      {
+        "text": "25",
+        "is_correct": false
+      },
+      {
+        "text": "26",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The amounts subtracted grow by one each time; continue that pattern.",
+    "submodule": "lr-verbal-reasoning"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which planet in the solar system is closest to the Sun?",
+    "explanation": "Mercury is the innermost planet and closest celestial body of our solar system to the Sun",
+    "options": [
+      {
+        "text": "Venus",
+        "is_correct": false
+      },
+      {
+        "text": "Mars",
+        "is_correct": false
+      },
+      {
+        "text": "Earth",
+        "is_correct": false
+      },
+      {
+        "text": "Mercury",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "The closest planet is the innermost one in the solar system.",
+    "submodule": "gk-science-tech"
+  },
+  {
+    "module": "gk",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the official currency of Japan?",
+    "explanation": "The Japanese Yen (JPY) is the official currency of Japan",
+    "options": [
+      {
+        "text": "Yuan",
+        "is_correct": false
+      },
+      {
+        "text": "Yen",
+        "is_correct": true
+      },
+      {
+        "text": "Won",
+        "is_correct": false
+      },
+      {
+        "text": "Ringgit",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Recall the monetary unit used for everyday payments in Japan.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "gk",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Approximately what is the speed of light in a vacuum?",
+    "explanation": "The speed of light in a vacuum is approximately 299,792 kilometers per second, commonly rounded to 300,000 km/s",
+    "options": [
+      {
+        "text": "150,000 km/s",
+        "is_correct": false
+      },
+      {
+        "text": "450,000 km/s",
+        "is_correct": false
+      },
+      {
+        "text": "300,000 km/s",
+        "is_correct": true
+      },
+      {
+        "text": "600,000 km/s",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Use the commonly rounded value close to three hundred thousand kilometers per second.",
+    "submodule": "gk-science-tech"
+  },
+  {
+    "module": "gk",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "Which is the largest hot desert in the world?",
+    "explanation": "The Sahara Desert in northern Africa spans roughly 9 million square kilometers, making it the world's largest subtropical hot desert",
+    "options": [
+      {
+        "text": "Gobi Desert",
+        "is_correct": false
+      },
+      {
+        "text": "Kalahari Desert",
+        "is_correct": false
+      },
+      {
+        "text": "Sahara Desert",
+        "is_correct": true
+      },
+      {
+        "text": "Atacama Desert",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The largest hot desert is in northern Africa; exclude cold polar deserts.",
+    "submodule": "gk-history-geography"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "In Python, what is the output of: print('Data' + 'base')?",
+    "explanation": "The + operator concatenates two strings directly without adding spaces, resulting in 'Database'",
+    "options": [
+      {
+        "text": "'Data base'",
+        "is_correct": false
+      },
+      {
+        "text": "'Data+base'",
+        "is_correct": false
+      },
+      {
+        "text": "'Database'",
+        "is_correct": true
+      },
+      {
+        "text": "TypeError",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "String addition joins the two pieces directly without inserting a space.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "prog",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the output of the Python expression: 17 % 5?",
+    "explanation": "The modulo operator (%) returns the remainder of the integer division. 17 divided by 5 is 3 with a remainder of 2",
+    "options": [
+      {
+        "text": "2",
+        "is_correct": true
+      },
+      {
+        "text": "3",
+        "is_correct": false
+      },
+      {
+        "text": "3.4",
+        "is_correct": false
+      },
+      {
+        "text": "1",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Modulo gives the remainder left after whole-number division.",
+    "submodule": "prog-fundamentals"
+  },
+  {
+    "module": "prog",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "What is the output of: nums = [1, 2]; nums.append(3); print(len(nums))?",
+    "explanation": "nums starts with 2 elements. The append() method adds 3 to the list in-place, making the total length 3",
+    "options": [
+      {
+        "text": "2",
+        "is_correct": false
+      },
+      {
+        "text": "3",
+        "is_correct": true
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "None",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Appending adds one item to the list, after which length counts all items.",
+    "submodule": "prog-arrays-ds"
+  },
+  {
+    "module": "cs",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which of the following is primarily categorized as an input device?",
+    "explanation": "A keyboard is used to enter text and commands into a computer, making it an input device. Monitors, speakers, and printers are output devices",
+    "options": [
+      {
+        "text": "Monitor",
+        "is_correct": false
+      },
+      {
+        "text": "Speaker",
+        "is_correct": false
+      },
+      {
+        "text": "Printer",
+        "is_correct": false
+      },
+      {
+        "text": "Keyboard",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "An input device sends data or commands from a person into a computer.",
+    "submodule": "cs-operating-systems"
+  },
+  {
+    "module": "cs",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "In SQL, which clause is used to filter records that meet a specified condition?",
+    "explanation": "The WHERE clause in SQL extracts only those records that satisfy a specified filter condition",
+    "options": [
+      {
+        "text": "WHERE",
+        "is_correct": true
+      },
+      {
+        "text": "ORDER BY",
+        "is_correct": false
+      },
+      {
+        "text": "GROUP BY",
+        "is_correct": false
+      },
+      {
+        "text": "JOIN",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "In a SELECT query, use the clause that keeps rows matching a condition.",
+    "submodule": "cs-dbms"
+  },
+  {
+    "module": "cs",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "How many bits are used in an IPv4 address?",
+    "explanation": "An IPv4 address consists of 32 bits, typically represented as 4 octets in dotted-decimal notation (e.g., 192.168.1.1)",
+    "options": [
+      {
+        "text": "16 bits",
+        "is_correct": false
+      },
+      {
+        "text": "32 bits",
+        "is_correct": true
+      },
+      {
+        "text": "64 bits",
+        "is_correct": false
+      },
+      {
+        "text": "128 bits",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "An IPv4 address has four octets, each containing eight bits.",
+    "submodule": "cs-networks"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the SI unit of work and energy?",
+    "explanation": "The Joule (J) is the standard SI unit of energy and mechanical work, equal to 1 Newton-meter",
+    "options": [
+      {
+        "text": "Watt",
+        "is_correct": false
+      },
+      {
+        "text": "Joule",
+        "is_correct": true
+      },
+      {
+        "text": "Newton",
+        "is_correct": false
+      },
+      {
+        "text": "Volt",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Work is force applied over a displacement; choose the matching SI unit.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which law describes the linear elastic relationship where the force exerted by a spring is proportional to its extension (F = -k * x)?",
+    "explanation": "Hooke's Law states that the restoring force of an elastic spring is directly proportional to its displacement from equilibrium",
+    "options": [
+      {
+        "text": "Boyle's Law",
+        "is_correct": false
+      },
+      {
+        "text": "Coulomb's Law",
+        "is_correct": false
+      },
+      {
+        "text": "Hooke's Law",
+        "is_correct": true
+      },
+      {
+        "text": "Pascal's Law",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "The named spring principle relates restoring force to displacement from equilibrium.",
+    "submodule": "eng-mechanical"
+  },
+  {
+    "module": "eng",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "What is the standard SI unit of electrical capacitance?",
+    "explanation": "The Farad (F) is the SI unit of capacitance, defined as one coulomb of charge stored per volt of electrical potential",
+    "options": [
+      {
+        "text": "Farad",
+        "is_correct": true
+      },
+      {
+        "text": "Henry",
+        "is_correct": false
+      },
+      {
+        "text": "Tesla",
+        "is_correct": false
+      },
+      {
+        "text": "Weber",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Capacitance is stored charge divided by potential difference.",
+    "submodule": "eng-electrical"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "Which organ is the largest by surface area and weight in the human body?",
+    "explanation": "The skin (integumentary system) is the human body's largest organ, serving as a protective barrier and thermoregulator",
+    "options": [
+      {
+        "text": "Liver",
+        "is_correct": false
+      },
+      {
+        "text": "Lungs",
+        "is_correct": false
+      },
+      {
+        "text": "Brain",
+        "is_correct": false
+      },
+      {
+        "text": "Skin",
+        "is_correct": true
+      }
+    ],
+    "hint_text": "Look for the body?s outer protective covering, which also helps regulate temperature.",
+    "submodule": "med-anatomy"
+  },
+  {
+    "module": "med",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is the iron-rich protein in red blood cells that binds oxygen?",
+    "explanation": "Hemoglobin is an iron-containing protein in erythrocytes that binds oxygen in the lungs and releases it into body tissues",
+    "options": [
+      {
+        "text": "Myoglobin",
+        "is_correct": false
+      },
+      {
+        "text": "Hemoglobin",
+        "is_correct": true
+      },
+      {
+        "text": "Keratin",
+        "is_correct": false
+      },
+      {
+        "text": "Collagen",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "This iron-containing protein in red cells binds oxygen in the lungs and releases it to tissues.",
+    "submodule": "med-physiology"
+  },
+  {
+    "module": "med",
+    "difficulty": "medium",
+    "level_number": 2,
+    "question_text": "In which anatomical tissue are red blood cells, white blood cells, and platelets primarily produced?",
+    "explanation": "Hematopoiesis—the production of blood cellular components—primarily takes place in the red bone marrow",
+    "options": [
+      {
+        "text": "Spleen",
+        "is_correct": false
+      },
+      {
+        "text": "Lymph nodes",
+        "is_correct": false
+      },
+      {
+        "text": "Bone marrow",
+        "is_correct": true
+      },
+      {
+        "text": "Thymus",
+        "is_correct": false
+      }
+    ],
+    "hint_text": "Blood cell formation occurs in the red, blood-producing tissue inside certain bones.",
+    "submodule": "med-basic-science"
+  }
+]

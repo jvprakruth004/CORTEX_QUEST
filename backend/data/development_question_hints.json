@@ -1,0 +1,23 @@
+[
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "What is 20% of 150?",
+    "hint_text": "Find one tenth of the amount, then double that value."
+  },
+  {
+    "module": "apt",
+    "difficulty": "easy",
+    "level_number": 1,
+    "question_text": "A shirt costs 400 and sells at 500. Profit %?",
+    "hint_text": "Calculate the gain, then compare it with the original cost price."
+  },
+  {
+    "module": "apt",
+    "difficulty": "medium",
+    "level_number": 1,
+    "question_text": "Medium question: 2+2?",
+    "hint_text": "Combine the two equal pairs by counting forward from the first number."
+  }
+]

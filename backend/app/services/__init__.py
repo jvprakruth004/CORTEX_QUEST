@@ -1,0 +1,36 @@
+"""Authentication service package"""
+from app.services.auth import (
+    hash_password,
+    verify_password,
+    create_access_token,
+    create_refresh_token,
+    decode_token,
+    hash_refresh_token,
+    generate_refresh_token,
+    create_session,
+    revoke_session,
+    get_active_session,
+    validate_account_active,
+    AuthError,
+    InvalidCredentialsError,
+    TokenError,
+    SessionError,
+)
+
+__all__ = [
+    "hash_password",
+    "verify_password",
+    "create_access_token",
+    "create_refresh_token",
+    "decode_token",
+    "hash_refresh_token",
+    "generate_refresh_token",
+    "create_session",
+    "revoke_session",
+    "get_active_session",
+    "validate_account_active",
+    "AuthError",
+    "InvalidCredentialsError",
+    "TokenError",
+    "SessionError",
+]

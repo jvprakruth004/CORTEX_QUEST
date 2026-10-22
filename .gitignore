@@ -1,0 +1,44 @@
+# Local environment and secrets
+**/.env
+**/.env.*
+!**/.env.example
+**/.env.properties
+
+# Python environments, bytecode, and test/tool caches
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.coverage
+**/htmlcov/
+
+# JavaScript dependencies and generated output
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+
+# Local logs, runtime data, and database backups
+**/*.log
+/backups/
+**/backups/
+**/*.dump
+**/*.backup
+**/*.bak
+**/*.sqlite
+**/*.sqlite3
+
+# Private keys and local certificate bundles
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*.keystore
+
+# Operating-system files
+**/.DS_Store
+**/Thumbs.db

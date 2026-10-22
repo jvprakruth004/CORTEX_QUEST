@@ -1,0 +1,353 @@
+/* ==========================================================================
+   CORTEX QUEST — DESIGN SYSTEM
+   Juniper Green Palette, Typography, Base Resets, Scrollbar, & Variables
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ------------------------------------------------------------------------
+     Primary Color System (Juniper Green & Nature Harmony)
+     ------------------------------------------------------------------------ */
+  --cq-primary: #3A5311;
+  --cq-primary-light: #4d6e18;
+  --cq-primary-lighter: #628c20;
+  --cq-primary-dark: #2a3d0c;
+  --cq-primary-darker: #1b2807;
+  --cq-primary-rgb: 58, 83, 17;
+
+  --cq-sage: #7a9a5c;
+  --cq-sage-light: #9ab87e;
+  --cq-sage-dark: #5c7940;
+  --cq-sage-rgb: 122, 154, 92;
+
+  --cq-olive: #6b7c3a;
+  --cq-olive-light: #889c4d;
+  --cq-olive-dark: #4f5c29;
+
+  --cq-cream: #f5f0e8;
+  --cq-cream-muted: #e4ddcf;
+  --cq-cream-rgb: 245, 240, 232;
+
+  --cq-forest: #1a2d05;
+  --cq-forest-dark: #0d1a05;
+  --cq-forest-rgb: 26, 45, 5;
+
+  /* ------------------------------------------------------------------------
+     Accents & Currencies
+     ------------------------------------------------------------------------ */
+  --cq-gold: #d4a017;
+  --cq-gold-light: #f0c040;
+  --cq-gold-dark: #aa7f10;
+  --cq-gold-rgb: 212, 160, 23;
+
+  --cq-color-xp: #a855f7;
+  --cq-color-xp-light: #c084fc;
+  --cq-color-xp-rgb: 168, 85, 247;
+
+  --cq-color-coins: #d4a017;
+  --cq-color-coins-light: #f0c040;
+  --cq-color-coins-rgb: 212, 160, 23;
+
+  --cq-color-diamonds: #06b6d4;
+  --cq-color-diamonds-light: #38bdf8;
+  --cq-color-diamonds-rgb: 6, 182, 212;
+
+  --cq-color-stars: #fbbf24;
+  --cq-color-stars-empty: rgba(255, 255, 255, 0.2);
+
+  /* ------------------------------------------------------------------------
+     Status & Feedback
+     ------------------------------------------------------------------------ */
+  --cq-success: #22c55e;
+  --cq-success-light: #4ade80;
+  --cq-success-bg: rgba(34, 197, 94, 0.15);
+  --cq-success-border: rgba(34, 197, 94, 0.4);
+
+  --cq-error: #ef4444;
+  --cq-error-light: #f87171;
+  --cq-error-bg: rgba(239, 68, 68, 0.15);
+  --cq-error-border: rgba(239, 68, 68, 0.4);
+
+  --cq-warning: #f59e0b;
+  --cq-warning-light: #fbbf24;
+  --cq-warning-bg: rgba(245, 158, 11, 0.15);
+  --cq-warning-border: rgba(245, 158, 11, 0.4);
+
+  --cq-info: #3b82f6;
+  --cq-info-light: #60a5fa;
+  --cq-info-bg: rgba(59, 130, 246, 0.15);
+  --cq-info-border: rgba(59, 130, 246, 0.4);
+
+  /* Difficulty Levels */
+  --cq-diff-easy: #22c55e;
+  --cq-diff-medium: #f59e0b;
+  --cq-diff-hard: #ef4444;
+
+  /* ------------------------------------------------------------------------
+     Default Semantic Tokens (Dark Theme Base)
+     ------------------------------------------------------------------------ */
+  --cq-bg: #0d1a05;
+  --cq-bg-rgb: 13, 26, 5;
+  --cq-surface: #1a2d0a;
+  --cq-surface-rgb: 26, 45, 10;
+  --cq-surface-alt: #243d10;
+  --cq-surface-hover: #2b4713;
+  --cq-surface-active: #325316;
+  --cq-surface-glass: rgba(26, 45, 10, 0.85);
+  --cq-surface-glass-border: rgba(122, 154, 92, 0.25);
+
+  --cq-text-primary: #e8f0d8;
+  --cq-text-secondary: #a0b88d;
+  --cq-text-muted: #6c845b;
+  --cq-text-inverse: #0d1a05;
+
+  --cq-border: rgba(58, 83, 17, 0.4);
+  --cq-border-light: rgba(122, 154, 92, 0.25);
+  --cq-border-focus: #7a9a5c;
+  --cq-divider: rgba(58, 83, 17, 0.3);
+
+  /* ------------------------------------------------------------------------
+     Shadows & Elevations
+     ------------------------------------------------------------------------ */
+  --cq-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.35);
+  --cq-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --cq-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --cq-shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.65);
+  --cq-shadow-glow: 0 0 18px rgba(58, 83, 17, 0.6);
+  --cq-shadow-glow-bright: 0 0 24px rgba(98, 140, 32, 0.7);
+  --cq-shadow-glow-gold: 0 0 20px rgba(212, 160, 23, 0.5);
+  --cq-shadow-glow-cyan: 0 0 20px rgba(6, 182, 212, 0.5);
+  --cq-shadow-glow-xp: 0 0 20px rgba(168, 85, 247, 0.5);
+  --cq-shadow-glow-error: 0 0 20px rgba(239, 68, 68, 0.5);
+
+  /* ------------------------------------------------------------------------
+     Border Radii
+     ------------------------------------------------------------------------ */
+  --cq-radius-xs: 4px;
+  --cq-radius-sm: 8px;
+  --cq-radius-md: 12px;
+  --cq-radius-lg: 18px;
+  --cq-radius-xl: 26px;
+  --cq-radius-full: 9999px;
+
+  /* ------------------------------------------------------------------------
+     Typography
+     ------------------------------------------------------------------------ */
+  --cq-font-heading: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cq-font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cq-font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+
+  /* ------------------------------------------------------------------------
+     Transitions & Motion
+     ------------------------------------------------------------------------ */
+  --cq-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cq-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cq-transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cq-transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ------------------------------------------------------------------------
+     Layout Dimensions & Z-Index
+     ------------------------------------------------------------------------ */
+  --cq-topbar-height: 64px;
+  --cq-bottom-nav-height: 68px;
+  --cq-sidebar-width: 260px;
+  --cq-sidebar-collapsed-width: 72px;
+  --cq-max-content-width: 1280px;
+
+  --cq-z-dropdown: 1000;
+  --cq-z-sticky: 1020;
+  --cq-z-fixed: 1030;
+  --cq-z-modal-backdrop: 1040;
+  --cq-z-modal: 1050;
+  --cq-z-popover: 1060;
+  --cq-z-tooltip: 1070;
+  --cq-z-toast: 1080;
+}
+
+/* ==========================================================================
+   Base Resets & Normalization
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--cq-font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--cq-text-primary);
+  background-color: var(--cq-bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--cq-font-heading);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--cq-text-primary);
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw + 0.8rem, 2.25rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2vw + 0.6rem, 1.75rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: clamp(1.1rem, 1.5vw + 0.4rem, 1.35rem);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+small {
+  font-size: 0.875rem;
+  color: var(--cq-text-secondary);
+}
+
+strong, b {
+  font-weight: 600;
+  color: var(--cq-text-primary);
+}
+
+code, kbd, samp, pre {
+  font-family: var(--cq-font-mono);
+  font-size: 0.9em;
+}
+
+code {
+  padding: 0.15em 0.4em;
+  background: var(--cq-surface-alt);
+  color: var(--cq-sage-light);
+  border-radius: var(--cq-radius-xs);
+  border: 1px solid var(--cq-border);
+}
+
+a {
+  color: var(--cq-sage-light);
+  text-decoration: none;
+  transition: color var(--cq-transition-fast);
+}
+
+a:hover {
+  color: var(--cq-gold-light);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--cq-divider);
+  margin: 1.5rem 0;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* ==========================================================================
+   Selection Color
+   ========================================================================== */
+
+::selection {
+  background-color: var(--cq-primary-light);
+  color: var(--cq-cream);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: var(--cq-primary-light);
+  color: var(--cq-cream);
+  text-shadow: none;
+}
+
+/* ==========================================================================
+   Scrollbar Styling (Themed, Thin)
+   ========================================================================== */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cq-primary-light) var(--cq-surface);
+}
+
+/* Chromium & WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cq-bg);
+  border-radius: var(--cq-radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cq-primary-light);
+  border-radius: var(--cq-radius-full);
+  border: 2px solid var(--cq-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cq-sage);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

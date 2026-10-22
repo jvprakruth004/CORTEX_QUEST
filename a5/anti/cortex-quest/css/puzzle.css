@@ -1,0 +1,327 @@
+/* ==========================================================================
+   CORTEX QUEST — BLOCK PUZZLE ENGINE
+   8x8 Grid, Block Palette, Cell Animations, Clearing Sweeps, & Game Over
+   ========================================================================== */
+
+:root {
+  /* Block Piece Colors */
+  --block-red: #ef4444;
+  --block-red-glow: rgba(239, 68, 68, 0.6);
+
+  --block-blue: #3b82f6;
+  --block-blue-glow: rgba(59, 130, 246, 0.6);
+
+  --block-green: #22c55e;
+  --block-green-glow: rgba(34, 197, 94, 0.6);
+
+  --block-purple: #a855f7;
+  --block-purple-glow: rgba(168, 85, 247, 0.6);
+
+  --block-orange: #f97316;
+  --block-orange-glow: rgba(249, 115, 22, 0.6);
+
+  --block-cyan: #06b6d4;
+  --block-cyan-glow: rgba(6, 182, 212, 0.6);
+
+  --block-gold: #d4a017;
+  --block-gold-glow: rgba(212, 160, 23, 0.6);
+
+  --block-pink: #ec4899;
+  --block-pink-glow: rgba(236, 72, 153, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   1. PUZZLE CONTAINER & HEADER
+   -------------------------------------------------------------------------- */
+.cq-puzzle-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+
+.cq-puzzle-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--cq-divider);
+}
+
+.cq-puzzle-title {
+  font-family: var(--cq-font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--cq-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cq-puzzle-score {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--cq-font-heading);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--cq-gold-light);
+  text-shadow: 0 0 10px rgba(212, 160, 23, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   2. 8x8 PUZZLE GRID
+   -------------------------------------------------------------------------- */
+.cq-puzzle-grid-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  background: rgba(13, 26, 5, 0.8);
+  border: 2px solid var(--cq-border);
+  border-radius: var(--cq-radius-md);
+  padding: 6px;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.cq-puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Cell */
+.cq-grid-cell {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(58, 83, 17, 0.25);
+  border-radius: 4px;
+  position: relative;
+  transition:
+    background-color var(--cq-transition-fast),
+    border-color var(--cq-transition-fast),
+    box-shadow var(--cq-transition-fast),
+    transform var(--cq-transition-fast);
+}
+
+/* Cell: Filled State */
+.cq-grid-cell.filled {
+  background: var(--cell-color, var(--cq-sage));
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.45),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.35),
+    0 0 8px var(--cell-glow, rgba(122, 154, 92, 0.45));
+  animation: blockDrop 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Cell: Ghost / Preview State */
+.cq-grid-cell.preview {
+  background: var(--cell-preview-color, rgba(122, 154, 92, 0.4));
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 8px var(--cell-glow, rgba(122, 154, 92, 0.3));
+}
+
+/* Cell: Clearing Flash */
+.cq-grid-cell.clearing {
+  animation: rowClear 500ms ease-out forwards;
+  z-index: 5;
+}
+
+/* Color Classes for Cells */
+.cq-grid-cell.block-red,
+.cq-block-cell.block-red {
+  --cell-color: var(--block-red);
+  --cell-glow: var(--block-red-glow);
+  --cell-preview-color: rgba(239, 68, 68, 0.45);
+}
+
+.cq-grid-cell.block-blue,
+.cq-block-cell.block-blue {
+  --cell-color: var(--block-blue);
+  --cell-glow: var(--block-blue-glow);
+  --cell-preview-color: rgba(59, 130, 246, 0.45);
+}
+
+.cq-grid-cell.block-green,
+.cq-block-cell.block-green {
+  --cell-color: var(--block-green);
+  --cell-glow: var(--block-green-glow);
+  --cell-preview-color: rgba(34, 197, 94, 0.45);
+}
+
+.cq-grid-cell.block-purple,
+.cq-block-cell.block-purple {
+  --cell-color: var(--block-purple);
+  --cell-glow: var(--block-purple-glow);
+  --cell-preview-color: rgba(168, 85, 247, 0.45);
+}
+
+.cq-grid-cell.block-orange,
+.cq-block-cell.block-orange {
+  --cell-color: var(--block-orange);
+  --cell-glow: var(--block-orange-glow);
+  --cell-preview-color: rgba(249, 115, 22, 0.45);
+}
+
+.cq-grid-cell.block-cyan,
+.cq-block-cell.block-cyan {
+  --cell-color: var(--block-cyan);
+  --cell-glow: var(--block-cyan-glow);
+  --cell-preview-color: rgba(6, 182, 212, 0.45);
+}
+
+.cq-grid-cell.block-gold,
+.cq-block-cell.block-gold {
+  --cell-color: var(--block-gold);
+  --cell-glow: var(--block-gold-glow);
+  --cell-preview-color: rgba(212, 160, 23, 0.45);
+}
+
+.cq-grid-cell.block-pink,
+.cq-block-cell.block-pink {
+  --cell-color: var(--block-pink);
+  --cell-glow: var(--block-pink-glow);
+  --cell-preview-color: rgba(236, 72, 153, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   3. BLOCK PALETTE & PIECES
+   -------------------------------------------------------------------------- */
+.cq-block-palette {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  background: rgba(13, 26, 5, 0.4);
+  border: 1px solid var(--cq-border);
+  border-radius: var(--cq-radius-md);
+  min-height: 80px;
+}
+
+.cq-block-piece {
+  display: grid;
+  gap: 2px;
+  padding: 4px;
+  cursor: grab;
+  transition: transform var(--cq-transition-fast), filter var(--cq-transition-fast);
+}
+
+.cq-block-piece:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.cq-block-piece:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+.cq-block-piece.used {
+  opacity: 0.2;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cq-block-cell {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: var(--cell-color, var(--cq-sage));
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   4. ROW / COLUMN CLEAR SWEEP EFFECT
+   -------------------------------------------------------------------------- */
+.cq-row-sweep-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ffffff;
+  box-shadow: 0 0 16px var(--cq-gold-light), 0 0 24px #ffffff;
+  pointer-events: none;
+  animation: rowSweep 350ms ease-out forwards;
+}
+
+@keyframes rowSweep {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. PARTICLE EFFECTS
+   -------------------------------------------------------------------------- */
+.cq-particles-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.cq-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--particle-color, var(--cq-gold-light));
+  box-shadow: 0 0 6px var(--particle-color, var(--cq-gold-light));
+  pointer-events: none;
+  animation: particleBurst 600ms ease-out forwards;
+}
+
+/* --------------------------------------------------------------------------
+   6. GAME OVER OVERLAY
+   -------------------------------------------------------------------------- */
+.cq-puzzle-gameover {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 26, 5, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--cq-radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  z-index: 20;
+  animation: fadeIn 300ms ease-out forwards;
+}
+
+.cq-puzzle-gameover-title {
+  font-family: var(--cq-font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--cq-error-light);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
+}
+
+.cq-puzzle-gameover-score {
+  font-family: var(--cq-font-heading);
+  font-size: 1.15rem;
+  color: var(--cq-text-primary);
+  margin-bottom: 1.25rem;
+}

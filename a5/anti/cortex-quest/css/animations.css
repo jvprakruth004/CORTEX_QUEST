@@ -1,0 +1,454 @@
+/* ==========================================================================
+   CORTEX QUEST — ANIMATIONS
+   Keyframes, Game Effects, Skeleton Shimmers, & Animation Utilities
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Core Fades & Translations
+   -------------------------------------------------------------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Bounces & Elastic Effects
+   -------------------------------------------------------------------------- */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Pulses & Glows
+   -------------------------------------------------------------------------- */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(58, 83, 17, 0.4), 0 0 20px rgba(58, 83, 17, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(122, 154, 92, 0.8), 0 0 35px rgba(58, 83, 17, 0.5);
+  }
+}
+
+@keyframes glowGoldPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(212, 160, 23, 0.4), 0 0 20px rgba(212, 160, 23, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(240, 192, 64, 0.85), 0 0 40px rgba(212, 160, 23, 0.6);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Rotations & Spins
+   -------------------------------------------------------------------------- */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Shimmer & Skeleton Loading
+   -------------------------------------------------------------------------- */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Gaming Specific Animations
+   -------------------------------------------------------------------------- */
+
+/* Block puzzle drop bounce */
+@keyframes blockDrop {
+  0% {
+    opacity: 0;
+    transform: scale(1.4) translateY(-10px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.92) translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Puzzle row / col clearing flash */
+@keyframes rowClear {
+  0% {
+    filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    filter: brightness(2.5) drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    transform: scale(1.12);
+  }
+  60% {
+    filter: brightness(1.8) drop-shadow(0 0 25px var(--cq-gold-light));
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    filter: brightness(1);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* Particle burst explosion */
+@keyframes particleBurst {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx, 30px), var(--dy, -30px)) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Celebration / Level Up modal animation */
+@keyframes levelUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-10deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(4deg);
+  }
+  75% {
+    transform: scale(0.95) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Floating coin reward */
+@keyframes coinFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.6);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-16px) scale(1.2);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-38px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-56px) scale(0.8);
+  }
+}
+
+/* XP progress bar fill animation */
+@keyframes xpBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--target-width, 100%);
+  }
+}
+
+/* Shake for wrong answers */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15%, 45%, 75% { transform: translateX(-6px); }
+  30%, 60%, 90% { transform: translateX(6px); }
+}
+
+/* Gentle idle float */
+@keyframes floatIdle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Currency bump scale */
+@keyframes currencyBump {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.35);
+    filter: brightness(1.3);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+.animate-fade-in {
+  animation: fadeIn var(--cq-transition-normal) ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fadeOut var(--cq-transition-normal) ease-in forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp var(--cq-transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown var(--cq-transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft var(--cq-transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight var(--cq-transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 600ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-bounce-out {
+  animation: bounceOut 450ms ease-in forwards;
+}
+
+.animate-pulse {
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 2.5s infinite ease-in-out;
+}
+
+.animate-glow {
+  animation: glowPulse 2.4s infinite ease-in-out;
+}
+
+.animate-glow-gold {
+  animation: glowGoldPulse 2.4s infinite ease-in-out;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
+
+.animate-shake {
+  animation: shake 450ms ease-in-out;
+}
+
+.animate-float {
+  animation: floatIdle 3.2s ease-in-out infinite;
+}
+
+.animate-block-drop {
+  animation: blockDrop 280ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-row-clear {
+  animation: rowClear 500ms ease-out forwards;
+}
+
+.animate-level-up {
+  animation: levelUp 700ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-coin-float {
+  animation: coinFloat 900ms ease-out forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite linear;
+}
+
+/* Transition speed classes */
+.transition-fast {
+  transition: all var(--cq-transition-fast);
+}
+
+.transition-normal {
+  transition: all var(--cq-transition-normal);
+}
+
+.transition-slow {
+  transition: all var(--cq-transition-slow);
+}
+
+.transition-bounce {
+  transition: all var(--cq-transition-bounce);
+}
+
+/* Stagger delay helpers */
+.delay-100 { animation-delay: 100ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-250 { animation-delay: 250ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* --------------------------------------------------------------------------
+   Accessibility (prefers-reduced-motion)
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
